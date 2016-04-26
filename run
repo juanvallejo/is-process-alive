@@ -2,7 +2,8 @@
 
 # Check to see if service is running by pinging a specific port every hour.
 # Service / process is assumed dead if its port is closed.
-# If dead, alert email is sent to specified addresses.
+# If dead, alert email is sent to specified addresses every 3 hours (Keep that spam at a minimum).
+# Attempts to restart service.
 # @juanvallejo
 
 FALSE=1
