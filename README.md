@@ -20,4 +20,5 @@ Not generic enough to apply to any other process besides the Pizza My Mind serve
 
 - Have script read "message to be emailed in case of error" from a specific file instead of having it be hard-coded.
 - Have a different file where recipient email addresses are stored.
-- Have a way to set "frequency" at which port is pinged
+- Have a way to set "frequency" at which port is pinged.
+- Have a way to set `service name` or `restart procedure` so that service being "watched" can be restarted.
