@@ -50,13 +50,12 @@ do
 		echo "Port $PORT is open. Assuming nominal state"
 	else
 		echo "Port $PORT is closed. Server assumed dead"
-		
-		# generate email
 			
 		if [[ "$N_ALERTS_SENT" -le 3 ]]
 		then
 			if [[ "$N_ALERTS_SENT" -eq 0 ]]
 			then	
+				# generate email
 				echo "Alert email sent."
 				echo -e $MESSAGE | mail -s "The Pizza My Mind Server is DOWN" -r "juan.vallejo.12@cnu.edu" --to "juan.vallejo.12@cnu.edu" "clarem@cnu.edu" "jonah.lazar.14@cnu.edu" "raymond.koehl@cnu.edu"
 				# attempt to bring server back up
